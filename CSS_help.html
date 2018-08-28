@@ -15,6 +15,10 @@
         text-decoration: none;
         font-weight: bold;
       }
+
+      table {
+        width: 50%;
+      }
     /*TABLE STYLES*/
       .center {
         margin-left:auto;
@@ -23,16 +27,21 @@
       .colortable {
         background-color: #efe939;
         border-top: 6px solid darkgreen;
+        border-collapse: collapse;
       }
 
       td, tr, th{
         border: 0;
         padding-bottom: 10px;
+        padding-top: 10px;
       }
 
       th {
         background-color: lightblue;
         padding: 10px;
+      }
+      tr:nth-child(even){
+        background-color: #f7ef2a;
       }
     /* HOME DIRECTORY STYLES */
       .directory {
@@ -70,6 +79,21 @@
       <tr><td><code>rem</code></td>
         <td>is similar to <code>em</code> but is always set to the default
           of the html, usually 16px.</td></tr>
+      <tr><td><code>border-collapse:</code><br>
+        <code> collapse</code></td>
+        <td>removes the borders between different cells in a table. It makes the
+          tables look nice and homogenous!</td></tr>
+      <tr><td><code>classes</code></td>
+        <td>are a way to set styling for multiple things. They can be declared
+          like so: <code>.colortable</code>, which would declare class
+          colortable. This class can then be applied to multiple elements, and
+          will affect all of them.
+        </td></tr>
+      <tr><td><code>ids</code></td>
+        <td>are similar to classes, but are declared with a #, and can only be
+          applied to one element. ids also have precedence over classes in
+          specificity, so ids will override class styling on elements.
+        </td></tr>
     </table>
   </body>
 </html>
